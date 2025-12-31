@@ -1,31 +1,27 @@
-# This is a template for the Homebrew formula
-# Copy this to your homebrew-redistill repository as Formula/redistill.rb
-# Then update the SHA256 checksums with actual values from your GitHub releases
-
 class Redistill < Formula
   desc "High-performance Redis-compatible key-value store that outperforms Redis"
   homepage "https://github.com/shaikh-shahid/redistill"
-  url "https://github.com/shaikh-shahid/redistill/releases/download/v1.1.2/redistill-1.1.2-x86_64-apple-darwin.tar.gz"
-  sha256 "f7f200a3521a7a3d959a821478efb114d23c1330d60bae49589cc9849983a71c"
-  version "1.1.2"
+  url "https://github.com/shaikh-shahid/redistill/releases/download/v1.2.0/redistill-1.2.0-x86_64-apple-darwin.tar.gz"
+  sha256 "0d20aabb2c47ee5c8b3dd48f27f66cb2b79418c593ca2ac8f4feecbe23014911"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shaikh-shahid/redistill/releases/download/v1.1.2/redistill-1.1.2-x86_64-apple-darwin.tar.gz"
-      sha256 "f7f200a3521a7a3d959a821478efb114d23c1330d60bae49589cc9849983a71c"
+      url "https://github.com/shaikh-shahid/redistill/releases/download/v1.2.0/redistill-1.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "0d20aabb2c47ee5c8b3dd48f27f66cb2b79418c593ca2ac8f4feecbe23014911"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/shaikh-shahid/redistill/releases/download/v1.1.2/redistill-1.1.2-aarch64-apple-darwin.tar.gz"
-      sha256 "83b87a4e8acfa599fcc200d5017b79607c52215cce5e9371e8e18d6f8fd131c9"
+      url "https://github.com/shaikh-shahid/redistill/releases/download/v1.2.0/redistill-1.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "4487bf6be0dc4bf5dcc23ee265edfcb7d5fa3c1a11e6e46f0fb3a1bd21f0598e"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/shaikh-shahid/redistill/releases/download/v1.1.2/redistill-1.1.2-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "a3af41d8d28e1e2678d89bbfd9efc1aa82300d86f5a676c13a6920c6e75fac67"
+      url "https://github.com/shaikh-shahid/redistill/releases/download/v1.2.0/redistill-1.2.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "d483fd153f9f8272df68d1bd9d0b3050dd79e271d46f570ae03bb997b93ae945"
     end
   end
 
