@@ -1,27 +1,27 @@
 class Redistill < Formula
   desc "High-performance Redis-compatible key-value store that outperforms Redis"
   homepage "https://github.com/redistill-io/redistill"
-  url "https://github.com/redistill-io/redistill/releases/download/v1.2.8/redistill-1.2.8-x86_64-apple-darwin.tar.gz"
-  sha256 "dbba84294ce44184e78821fa5363c4a9cb0118eaf18a7140522b41be995ed81c"
-  version "1.2.8"
+  url "https://github.com/redistill-io/redistill/releases/download/v1.2.9/redistill-1.2.9-x86_64-apple-darwin.tar.gz"
+  sha256 "6c474d636c0d132f338e520420546bb76102373a10b50613a13fc244835c187e"
+  version "1.2.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/redistill-io/redistill/releases/download/v1.2.8/redistill-1.2.8-x86_64-apple-darwin.tar.gz"
-      sha256 "dbba84294ce44184e78821fa5363c4a9cb0118eaf18a7140522b41be995ed81c"
+      url "https://github.com/redistill-io/redistill/releases/download/v1.2.9/redistill-1.2.9-x86_64-apple-darwin.tar.gz"
+      sha256 "6c474d636c0d132f338e520420546bb76102373a10b50613a13fc244835c187e"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/redistill-io/redistill/releases/download/v1.2.8/redistill-1.2.8-aarch64-apple-darwin.tar.gz"
-      sha256 "a8ec2d3f4981b6a25722e5f9d99427d65d67a1f789b1fbaed9b4bdc97c670de1"
+      url "https://github.com/redistill-io/redistill/releases/download/v1.2.9/redistill-1.2.9-aarch64-apple-darwin.tar.gz"
+      sha256 "99ca78708efe711dd8bae83211d51d2a3ed6bdd9b27cce8f626f933612e42e63"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/redistill-io/redistill/releases/download/v1.2.8/redistill-1.2.8-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "8b7bfab9cb6d1e88dd6628195549f39f1f0701e773f38bf7615e93cddf6ae196"
+      url "https://github.com/redistill-io/redistill/releases/download/v1.2.9/redistill-1.2.9-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "9895f75d0fce7918ea8593530d5ae2f62af955bd4a1e6ff8c115dd5eb656a506"
     end
   end
 
